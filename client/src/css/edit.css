@@ -1,0 +1,28 @@
+.modal-content {
+    background-color: #0d1117;
+}
+
+.modal-header {
+}
+
+.modal-footer {
+    border-top: 0px;
+}
+
+.btn-close-white {
+    color: #fff;
+}
+
+.modal-dialog {
+    z-index: 100
+}
+
+.modal {
+}
+
+.modal-bg {
+    z-index: 50;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}

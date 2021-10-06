@@ -1,0 +1,19 @@
+.input-group input, .input-group select {
+    background-color: #161b22;
+    border-color: #2d2d2d;
+    color: #fff;
+    text-decoration-color: #fff;
+    color-scheme: dark;
+}
+
+.input-group input:focus, .input-group select:focus {
+    background-color: #161b22;
+    color: #fff;
+    text-decoration-color: #fff;
+}
+
+.input-group .input-group-text {
+    background-color: #272e38;
+    color: #fff;
+    border-color: #2d2d2d;
+}
