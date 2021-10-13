@@ -260,7 +260,7 @@ const Tracker = ({ type, controller, setController, setAuth }) => {
                                             setDate(ddmmyyyy(day.date, false));
                                         }
                                     }}>
-                                        <title>{day.date.toLocaleDateString() +
+                                        <title>{ddmmyyy(day.date, true) +
                                         "\n" + day.activities.toString() +
                                         (day.activities === 1 ? " activity" : " activities") +
                                         (type !== "exercise" && day.activities > 0 ? "\n" + day.duration.toString() + " minutes" : "\n")

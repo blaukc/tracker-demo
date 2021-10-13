@@ -1,9 +1,9 @@
 //GET DDMMYYYY FROM DATE OBJECT
 export const ddmmyyyy = (date, slash) => {
     var day = date.getDate()
-    day < 10 ? day = '0' + day.toString() : day.toString()
+    day < 10 ? day = '0' + day.toString() : day = day.toString()
     var month = date.getMonth() + 1
-    month < 10 ? month = '0' + month.toString() : month.toString()
+    month < 10 ? month = '0' + month.toString() : month = month.toString()
     if (slash) {
         return day + '/' + month + '/' + date.getFullYear()
     } else {
