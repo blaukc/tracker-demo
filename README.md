@@ -10,8 +10,8 @@ cloned from my private repo of it
 
 ## [demo](http://blaukc-tracker.herokuapp.com)
 
-login the following credentials to view demo
+login to the [admin site](https://blaukc-pizza-mart.herokuapp.com/admin) to change order status
 
-username: test
+username: user
 
-password: test
+password: testpassword
