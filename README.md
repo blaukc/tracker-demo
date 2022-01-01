@@ -10,7 +10,7 @@ cloned from my private repo of it
 
 ## [demo](http://blaukc-tracker.herokuapp.com)
 
-login the following credentials to view demo
+login with credentials to view demo
 
 username: test
 
