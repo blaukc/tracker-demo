@@ -108,7 +108,7 @@ const Tracker = ({ type, controller, setController, setAuth }) => {
             }
         } else if (type === "exercise") {
             if (data_day.duration) {
-                tracker_day["duration"] += data_day.reps * data_day.duration * multiplier.multiplier;
+                tracker_day["duration"] += data_day.reps * data_day.duration * multiplier[data_day.type];
             } else {
                 tracker_day["duration"] += data_day.reps * multiplier[data_day.type];
             }
@@ -135,6 +135,8 @@ const Tracker = ({ type, controller, setController, setAuth }) => {
                     var day_counter = dayFromDate(year, data[i].date)       //get row and column from day number
                     var row = (first_day.getDay() + day_counter) % 7;
                     var column = Math.floor((first_day.getDay() + day_counter) / 7);
+                    // if column = 0 (first week of the year), use different method to get the row number as there may not be 7 days
+                    const day = column === 0 ? all_days[column][row - 7 + all_days[column].length] : all_days[column][row]
                     getDataLevel(all_days[column][row], data[i])
                 }
             }
