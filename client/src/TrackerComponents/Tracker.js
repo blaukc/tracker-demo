@@ -137,7 +137,7 @@ const Tracker = ({ type, controller, setController, setAuth }) => {
                     var column = Math.floor((first_day.getDay() + day_counter) / 7);
                     // if column = 0 (first week of the year), use different method to get the row number as there may not be 7 days
                     const day = column === 0 ? all_days[column][row - 7 + all_days[column].length] : all_days[column][row]
-                    getDataLevel(all_days[column][row], data[i])
+                    getDataLevel(day, data[i])
                 }
             }
         }
